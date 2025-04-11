@@ -1,11 +1,20 @@
 "GameInfo"
 {
 	// This is what shows up in the 'Third Party Games' area of the Steam games list.
-	game	"Source2013SDKTemplate"
-	title	"Source2013SDKTemplate"				// Main Menu large Text
-	title2	"based on sdk template technology"	// Main Menu small text
-	type	multiplayer_only
-//	type	singleplayer_only
+	game	"Team Fortress 2 Origins"
+	gamelogo 1
+	title2	"Origins"
+	type multiplayer_only
+	nomodels 1
+	nohimodel 1
+	nocrosshair 0
+	hidden_maps
+	{
+		"test_speakers"		1
+		"test_hardware"		1
+	}
+	nodegraph 0
+
 
 	GameData	"sdk.fgd"
 
@@ -23,8 +32,8 @@
 
 	FileSystem
 	{
-		SteamAppId				243750		// VPKs for Source SDK Base 2013 Multiplayer
-		//ToolsAppId			211			// Tools will load this (ie: source SDK caches) to get things like materials\debug, materials\editor, etc. (Deprecate on SDK 2013)
+		SteamAppId				440		// VPKs for Source SDK Base 2013 Multiplayer
+		ToolsAppId			211			// Tools will load this (ie: source SDK caches) to get things like materials\debug, materials\editor, etc. (Deprecate on SDK 2013)
 
 		//Orange box sdk allows an extra appid to be defined here to mount additional content. 240 is CounterStrike: Source (Deprecate on SDK 2013 but it can be re-added)
 		//AdditionalContentId			240
